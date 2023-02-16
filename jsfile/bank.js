@@ -3,6 +3,10 @@ document.getElementById('main-deposite').addEventListener('click', function(){
     const depositeamountString = inputDeposite.value;
     const depositeamount = parseFloat(depositeamountString);
     inputDeposite.value = '';
+    if(isNaN(inputDeposite)){
+        alert('please provide valid number !!');
+        return;
+    };
 
     const innerDeposite = document.getElementById('deposite');
     const depositeAmountString = innerDeposite.innerText;
@@ -26,6 +30,10 @@ document.getElementById('main-withdraw').addEventListener('click', function(){
     const WithdrawamountString = inputWithdraw.value;
     const Withdrawamount = parseFloat(WithdrawamountString);
     inputWithdraw.value = '';
+    if(isNaN(inputWithdraw)){
+        alert('please provide valid number !!');
+        return;
+    };
 
     const innerWithdraw = document.getElementById('withdraw');
     const WithdrawAmountString = innerWithdraw.innerText;

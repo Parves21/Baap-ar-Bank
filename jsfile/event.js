@@ -12,4 +12,3 @@ document.getElementById('your-button').addEventListener('click', function(){
         alert('invalid user');
     }
 });
-
